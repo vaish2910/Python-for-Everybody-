@@ -1,0 +1,10 @@
+hrs = input("Enter Hours:")
+h = float(hrs)
+rph=float(input("Rate per hour:"))
+if h>=40:
+	h1=h-40
+	gp1=1.5*rph*h1
+	h2=h-h1
+	gp2=rph*h2
+	g=gp1+gp2
+print(g)
