@@ -1,0 +1,13 @@
+fh = input("Enter file: ")
+t = open(fh)
+z = 0
+for line in t:
+    if line.startswith("From "):
+        r = line.rstrip().split()
+        email = r[1]
+        print(email)
+        z = z+1
+    else:
+        continue
+
+print("There were", zbroj, "lines in the file with From as the first word")
